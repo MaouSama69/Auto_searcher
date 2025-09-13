@@ -14,7 +14,7 @@ def click():
     mouse.click(Button.left, 1)
 
 def scroll_down_up():
-    steps = random.randint(1, 5)
+    steps = random.randint(1, 6)
     for _ in range(steps):
         mouse.scroll(0, -1)
         time.sleep(0.1)
