@@ -14,7 +14,7 @@ def click():
     mouse.click(Button.left, 1)
 
 def scroll_down_up():
-    steps = random.randint(1, 6)
+    steps = random.randint(1, 7)
     for _ in range(steps):
         mouse.scroll(0, -1)
         time.sleep(0.1)
@@ -40,7 +40,7 @@ def key_presses(num_lines):
         scroll_down_up()
         click()
 
-        delay_between = random.uniform(4, 8)  
+        delay_between = random.uniform(4, 9)  
 
 def get_integer_input(prompt):
     while True:
@@ -55,7 +55,7 @@ def get_integer_input(prompt):
             return None
 
 def run_bot(num_queries):
-    time.sleep(5)
+    time.sleep(7)
     key_presses(num_queries)
 
 if __name__ == "__main__":
